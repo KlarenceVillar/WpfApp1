@@ -1,0 +1,78 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBox  HorizontalContentAlignment="Right" Grid.ColumnSpan="3" FontSize="72"/>
+        <Grid x:Name="mButtons" Grid.Row="1" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Content="MC"></Label>
+            <Label Content="MR" Grid.Column="1"></Label>
+            <Label Content="M+" Grid.Column="2"></Label>
+            <Label Content="M-" Grid.Column="3"></Label>
+            <Label Content="M5" Grid.Column="4"></Label>
+            <Label Content="M" Grid.Column="5"></Label>
+        </Grid>
+        <Grid Grid.Row="2" Grid.ColumnSpan="3">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Margin="3" Content="%"></Button>
+            <Button Margin="3" Grid.Column="1" Content="CE"></Button>
+            <Button Margin="3" Grid.Column="2" Content="C"></Button>
+            <Button Margin="3" Grid.Column="3" Content="BACKSAPCE"></Button>
+            <Button Margin="3" Grid.Row="1" Content="1/x"></Button>
+            <Button Margin="3" Grid.Row="2" Content="7"></Button>
+            <Button Margin="3" Grid.Row="3" Content="4"></Button>
+            <Button Margin="3" Grid.Row="4" Content="1"></Button>
+            <Button Margin="3" Grid.Row="5" Content="+/-"></Button>
+            <Button Margin="3" Grid.Row="1" Grid.Column="1" Content="x^2"></Button>
+            <Button Margin="3" Grid.Row="2" Grid.Column="1" Content="8"></Button>
+            <Button Margin="3" Grid.Row="3" Grid.Column="1" Content="5"></Button>
+            <Button Margin="3" Grid.Row="4" Grid.Column="1" Content="2"></Button>
+            <Button Margin="3" Grid.Row="5" Grid.Column="1" Content="0"></Button>
+            <Button Margin="3" Grid.Row="1" Grid.Column="2" Content="2/x"></Button>
+            <Button Margin="3" Grid.Row="2" Grid.Column="2" Content="9"></Button>
+            <Button Margin="3" Grid.Row="3" Grid.Column="2" Content="6"></Button>
+            <Button Margin="3" Grid.Row="4" Grid.Column="2" Content="3"></Button>
+            <Button Margin="3" Grid.Row="5" Grid.Column="2" Content="."></Button>
+            <Button Margin="3" Grid.Row="1" Grid.Column="3" Content="/"></Button>
+            <Button Margin="3" Grid.Row="2" Grid.Column="3" Content="x"></Button>
+            <Button Margin="3" Grid.Row="3" Grid.Column="3" Content="-"></Button>
+            <Button Margin="3" Grid.Row="4" Grid.Column="3" Content="+"></Button>
+            <Button Margin="3" Grid.Row="5" Grid.Column="3" Content="="></Button>
+        </Grid>
+    </Grid>
+</Window> 
